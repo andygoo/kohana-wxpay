@@ -6,7 +6,6 @@
         "email": "278388475@qq.com",
 		"homepage": "http://www.jiesc.net/"
     }],
-	"type": "library",
     "license": "BSD",
     "require": {},
     "autoload": {
