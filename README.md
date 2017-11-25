@@ -1,1 +1,1 @@
-# kohana-wxpay
+Wxpay module for Kohana

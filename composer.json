@@ -1,0 +1,11 @@
+{
+    "name": "andygoo/wxpay",
+    "description": "Wxpay module for Kohana",
+    "authors": [
+        {
+            "name": "andygoo",
+            "email": "hackoo7@qq.com"
+        }
+    ],
+    "require": {}
+}
