@@ -3,10 +3,12 @@
     "description": "Wxpay module for Kohana",
     "authors": [{
         "name": "andygoo",
-        "email": "278388475@qq.com"
+        "email": "278388475@qq.com",
+		"homepage": "http://www.jiesc.net/"
     }],
+	"type": "library",
     "license": "BSD",
-    "minimum-stability" : "dev",
+    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "classmap": [
