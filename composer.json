@@ -1,6 +1,7 @@
 {
     "name": "andygoo/wxpay",
     "description": "Wxpay module for Kohana",
+	"version": "1.0.0",
     "authors": [
         {
             "name": "andygoo",
