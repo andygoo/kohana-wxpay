@@ -19,15 +19,15 @@ return [
 
 $wxpay = Kohana::config('wxpay');
 
-define('WXPAY_APPID', $wxpay['appid']));
-define('WXPAY_MCHID', $wxpay['mchid']));
-define('WXPAY_KEY', $wxpay['key']));
-define('WXPAY_APPSECRET', $wxpay['appsecret']));
-define('WXPAY_SSLCERT_PATH', $wxpay['sslcert_path']));
-define('WXPAY_SSLKEY_PATH', $wxpay['sslkey_path']));
-define('WXPAY_CURL_PROXY_HOST', isset($wxpay['curl_proxy_host']) ? $wxpay['curl_proxy_host'] : '0.0.0.0'));
-define('WXPAY_CURL_PROXY_PORT', isset($wxpay['curl_proxy_port']) ? $wxpay['curl_proxy_port'] : 0));
-define('WXPAY_REPORT_LEVENL', isset($wxpay['report_levenl']) ? $wxpay['report_levenl'] : 1));
+define('WXPAY_APPID', $wxpay['appid']);
+define('WXPAY_MCHID', $wxpay['mchid']);
+define('WXPAY_KEY', $wxpay['key']);
+define('WXPAY_APPSECRET', $wxpay['appsecret']);
+define('WXPAY_SSLCERT_PATH', $wxpay['sslcert_path']);
+define('WXPAY_SSLKEY_PATH', $wxpay['sslkey_path']);
+define('WXPAY_CURL_PROXY_HOST', isset($wxpay['curl_proxy_host']) ? $wxpay['curl_proxy_host'] : '0.0.0.0');
+define('WXPAY_CURL_PROXY_PORT', isset($wxpay['curl_proxy_port']) ? $wxpay['curl_proxy_port'] : 0);
+define('WXPAY_REPORT_LEVENL', isset($wxpay['report_levenl']) ? $wxpay['report_levenl'] : 1);
 
 
 /**
