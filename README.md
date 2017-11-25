@@ -19,7 +19,7 @@ composer require即可。参见 https://packagist.org/packages/andygoo/wxpay
 		'curl_proxy_host'=>'0.0.0.0',
 		'curl_proxy_port'=>0,
 		'report_levenl'=>1,
-	],
+	];
 ```
 
 ## 使用
