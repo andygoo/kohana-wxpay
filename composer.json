@@ -4,7 +4,7 @@
     "authors": [{
         "name": "andygoo",
         "email": "278388475@qq.com",
-		"homepage": "http://www.jiesc.net/"
+        "homepage": "http://www.jiesc.net/"
     }],
     "license": "BSD",
     "require": {},
