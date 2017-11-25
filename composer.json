@@ -1,12 +1,17 @@
 {
     "name": "andygoo/wxpay",
     "description": "Wxpay module for Kohana",
-	"version": "1.0.0",
-    "authors": [
-        {
-            "name": "andygoo",
-            "email": "hackoo7@qq.com"
-        }
-    ],
-    "require": {}
+    "authors": [{
+        "name": "andygoo",
+        "email": "278388475@qq.com"
+    }],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "lib/",
+            "example/WxPay.JsApiPay.php",
+            "example/WxPay.MicroPay.php",
+            "example/WxPay.NativePay.php"
+        ]
+    }
 }
