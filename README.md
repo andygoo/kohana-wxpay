@@ -28,4 +28,3 @@ composer require即可。参见 https://packagist.org/packages/andygoo/wxpay
 ```php
 $wxpay=new \WxPayApi();
 ```
- 
