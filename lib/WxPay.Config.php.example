@@ -1,36 +1,5 @@
 <?php
 /**
- * 为了尽量不修改官方sdk代码，并使用laravel的config，定义如下宏。
- */
- /* 
-配置文件：config/wxpay.php
-return [
-	'appid'=>'wx426b3015555a46be',
-	'mchid'=>'1225312702',
-	'key'=>'e10adc3949ba59abbe56e057f20f883e',
-	'appsecret'=>'01c6d59a3f9024db6336662ac95c8e74',
-	'sslcert_path'=>'../cert/apiclient_cert.pem',
-	'sslkey_path'=>'../cert/apiclient_key.pem',
-	//'curl_proxy_host'=>'0.0.0.0',
-	//'curl_proxy_port'=>0,
-	//'report_levenl'=>1,
-];
-*/
-
-$wxpay = Kohana::config('wxpay');
-
-define('WXPAY_APPID', $wxpay['appid']));
-define('WXPAY_MCHID', $wxpay['mchid']));
-define('WXPAY_KEY', $wxpay['key']));
-define('WXPAY_APPSECRET', $wxpay['appsecret']));
-define('WXPAY_SSLCERT_PATH', $wxpay['sslcert_path']));
-define('WXPAY_SSLKEY_PATH', $wxpay['sslkey_path']));
-define('WXPAY_CURL_PROXY_HOST', isset($wxpay['curl_proxy_host']) ? $wxpay['curl_proxy_host'] : '0.0.0.0'));
-define('WXPAY_CURL_PROXY_PORT', isset($wxpay['curl_proxy_port']) ? $wxpay['curl_proxy_port'] : 0));
-define('WXPAY_REPORT_LEVENL', isset($wxpay['report_levenl']) ? $wxpay['report_levenl'] : 1));
-
-
-/**
 * 	配置账号信息
 */
 
@@ -53,10 +22,10 @@ class WxPayConfig
 	 * 获取地址：https://mp.weixin.qq.com/advanced/advanced?action=dev&t=advanced/dev&token=2005451881&lang=zh_CN
 	 * @var string
 	 */
-	const APPID = WXPAY_APPID;//'wx426b3015555a46be';
-	const MCHID = WXPAY_MCHID;//'1900009851';
-	const KEY = WXPAY_KEY;//'8934e7d15453e97507ef794cf7b0519d';
-	const APPSECRET = WXPAY_APPSECRET;//'7813490da6f1265e4901ffb80afaa36f';
+	const APPID = 'wx426b3015555a46be';
+	const MCHID = '1900009851';
+	const KEY = '8934e7d15453e97507ef794cf7b0519d';
+	const APPSECRET = '7813490da6f1265e4901ffb80afaa36f';
 	
 	//=======【证书路径设置】=====================================
 	/**
@@ -65,8 +34,8 @@ class WxPayConfig
 	 * API证书下载地址：https://pay.weixin.qq.com/index.php/account/api_cert，下载之前需要安装商户操作证书）
 	 * @var path
 	 */
-	const SSLCERT_PATH = WXPAY_SSLCERT_PATH;//'../cert/apiclient_cert.pem';
-	const SSLKEY_PATH = WXPAY_SSLKEY_PATH;//'../cert/apiclient_key.pem';
+	const SSLCERT_PATH = '../cert/apiclient_cert.pem';
+	const SSLKEY_PATH = '../cert/apiclient_key.pem';
 	
 	//=======【curl代理设置】===================================
 	/**
@@ -75,8 +44,8 @@ class WxPayConfig
 	 * 默认CURL_PROXY_HOST=0.0.0.0和CURL_PROXY_PORT=0，此时不开启代理（如有需要才设置）
 	 * @var unknown_type
 	 */
-	const CURL_PROXY_HOST = WXPAY_CURL_PROXY_HOST;//"0.0.0.0";//"10.152.18.220";
-	const CURL_PROXY_PORT = WXPAY_CURL_PROXY_PORT;//0;//8080;
+	const CURL_PROXY_HOST = "0.0.0.0";//"10.152.18.220";
+	const CURL_PROXY_PORT = 0;//8080;
 	
 	//=======【上报信息配置】===================================
 	/**
@@ -86,5 +55,5 @@ class WxPayConfig
 	 * 上报等级，0.关闭上报; 1.仅错误出错上报; 2.全量上报
 	 * @var int
 	 */
-	const REPORT_LEVENL = WXPAY_REPORT_LEVENL;//1;
+	const REPORT_LEVENL = 1;
 }
