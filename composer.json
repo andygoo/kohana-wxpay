@@ -5,6 +5,8 @@
         "name": "andygoo",
         "email": "278388475@qq.com"
     }],
+    "license": "BSD",
+    "minimum-stability" : "dev",
     "require": {},
     "autoload": {
         "classmap": [
